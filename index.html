@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>青程 FutureMe Interaction Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="demo-stage">
+      <section class="phone" aria-label="青程 FutureMe 手机交互演示">
+        <div class="status-bar">
+          <span>9:41</span>
+          <div class="status-icons" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span class="battery"></span>
+          </div>
+        </div>
+
+        <div id="screen" class="screen screen-enter"></div>
+
+        <nav class="bottom-nav" aria-label="底部导航">
+          <button class="nav-item" data-route="home" type="button">
+            <span class="nav-icon" data-icon="home"></span>
+            <span>首页</span>
+          </button>
+          <button class="nav-item" data-route="focus" type="button">
+            <span class="nav-icon" data-icon="focus"></span>
+            <span>专注</span>
+          </button>
+          <button class="nav-item" data-route="plan" type="button">
+            <span class="nav-icon" data-icon="plan"></span>
+            <span>规划</span>
+          </button>
+          <button class="nav-item" data-route="trip" type="button">
+            <span class="nav-icon" data-icon="trip"></span>
+            <span>行程</span>
+          </button>
+          <button class="nav-item" data-route="profile" type="button">
+            <span class="nav-icon" data-icon="profile"></span>
+            <span>我的</span>
+          </button>
+        </nav>
+
+        <div id="overlay" class="overlay" aria-hidden="true"></div>
+        <div id="sheet" class="sheet" role="dialog" aria-modal="true"></div>
+        <div id="dialog" class="dialog-wrap" role="dialog" aria-modal="true"></div>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      </section>
+
+      <aside class="recording-panel" aria-label="录屏提示">
+        <p class="eyebrow">Recording Demo</p>
+        <h1>青程 FutureMe</h1>
+        <p>用于录制 30-45 秒软件交互展示视频。建议只录制左侧手机区域。</p>
+        <ol>
+          <li>首页停留 3 秒</li>
+          <li>开始专注并暂停/继续</li>
+          <li>打开规划、行程、徽章弹层</li>
+          <li>回到首页结束</li>
+        </ol>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
